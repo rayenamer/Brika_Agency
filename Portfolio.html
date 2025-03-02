@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      height: 100vh;
+      overflow: hidden; /* Hide default scrollbars */
+    }
+
+    .portfolio-container {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      gap: 20px;
+      margin: 20px;
+      padding: 20px;
+      height: 100%; /* Take full height of the viewport */
+      overflow-y: scroll; /* Enable vertical scrolling */
+    }
+
+    .portfolio-item {
+      width: 100%;
+      max-width: 600px; /* Control item width */
+      height: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .video iframe {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .video iframe:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .portfolio-item {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="portfolio-container">
+    <div class="portfolio-item">
+        <div class="video">
+          <iframe src="https://ik.imagekit.io/sh09gdtxr/Did%20you%20know%20that%20the%20fastest%20way%20to%20know%20if%20something%20is%20right%20for%20you%20is%20to%20take%20the%20risk%20and%20try%20it%20!%20%20%20Don_t%20overthink,%20%20every%20step%20forward%20is%20a%20chance%20to%20learn,%20grow,%20and%20discover%20what%20you_re%20truly%20capable%20of.%20.mp4?updatedAt=1740880582415" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    <div class="portfolio-item">
+        <div class="video">
+          <iframe src="https://ik.imagekit.io/sh09gdtxr/Did%20you%20know%20that%20the%20fastest%20way%20to%20know%20if%20something%20is%20right%20for%20you%20is%20to%20take%20the%20risk%20and%20try%20it%20!%20%20%20Don_t%20overthink,%20%20every%20step%20forward%20is%20a%20chance%20to%20learn,%20grow,%20and%20discover%20what%20you_re%20truly%20capable%20of.%20.mp4?updatedAt=1740880582415" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Add more portfolio items here -->
+    <!-- Just copy and paste the above structure for more items -->
+  </div>
+
+</body>
+</html>
